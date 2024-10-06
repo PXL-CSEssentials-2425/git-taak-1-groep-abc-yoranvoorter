@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid Background="LightGray">
-        <TextBlock Margin="40,10" HorizontalAlignment="Left" VerticalAlignment="Top">Kleurenpsychologie</TextBlock>
-        
+        <TextBlock Margin="40,20" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="10">Kleurenpsychologie</TextBlock>
+        <Image Source="/PXL.png" Width="50" Height="50" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="40,20"></Image>
     </Grid>
 </Window>
