@@ -24,5 +24,10 @@ namespace Git_taak_1
         {
             InitializeComponent();
         }
+
+        private void pxlImage_MouseEnter(object sender, MouseEventArgs e)
+        {
+            MainGrid.Background = new SolidColorBrush(Colors.Black);
+        }
     }
 }
