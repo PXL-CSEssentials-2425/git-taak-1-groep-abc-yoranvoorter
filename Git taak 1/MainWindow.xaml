@@ -44,5 +44,7 @@
         </Button>
         <Label Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20">Kleurcode:</Label>
         <TextBlock x:Name="colorCodeText" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Margin="10" FontSize="20" VerticalAlignment="Center"></TextBlock>
+        <Label Grid.Row="4" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20">Informatie:</Label>
+        <TextBlock x:Name="informationText" Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2" Margin="10" FontSize="20" VerticalAlignment="Center"></TextBlock>
     </Grid>
 </Window>
