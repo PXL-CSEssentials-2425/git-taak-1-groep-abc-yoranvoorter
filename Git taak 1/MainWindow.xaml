@@ -7,7 +7,42 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="MainGrid" Background="LightGray">
-        <TextBlock Margin="40,20" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="10">Kleurenpsychologie</TextBlock>
-        <Image x:Name="pxlImage" Source="/PXL.png" Width="50" Height="50" HorizontalAlignment="Right" VerticalAlignment="Top" Margin="40,20" MouseEnter="pxlImage_MouseEnter"></Image>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <TextBlock Margin="40,20" HorizontalAlignment="Left" VerticalAlignment="Top" Padding="10" Grid.Column="0">Kleurenpsychologie</TextBlock>
+        <Image x:Name="pxlImage" Source="/PXL.png" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="40,20" Grid.Column="3" MouseEnter="pxlImage_MouseEnter"></Image>
+        <Button x:Name="redBtn" Grid.Column="1" Grid.Row="1" Margin="10" Click="redBtn_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Rood.png" Stretch="Fill"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="greenBtn" Grid.Column="1" Grid.Row="2" Margin="10" Click="greenBtn_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Groen.png" Stretch="Fill"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="yellowBtn" Grid.Column="2" Grid.Row="1" Margin="10" Click="yellowBtn_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Geel.png" Stretch="Fill"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="blueBtn" Grid.Column="2" Grid.Row="2" Margin="10" Click="blueBtn_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="/Blauw.png"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <Label Grid.Row="3" HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20">Kleurcode:</Label>
+        <TextBlock x:Name="colorCodeText" Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="2" Margin="10" FontSize="20" VerticalAlignment="Center"></TextBlock>
     </Grid>
 </Window>

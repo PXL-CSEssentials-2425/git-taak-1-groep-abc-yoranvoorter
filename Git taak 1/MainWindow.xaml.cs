@@ -29,5 +29,25 @@ namespace Git_taak_1
         {
             MainGrid.Background = new SolidColorBrush(Colors.Black);
         }
+
+        private void redBtn_Click(object sender, RoutedEventArgs e)
+        {
+            colorCodeText.Text = "#FF0000";
+        }
+
+        private void greenBtn_Click(object sender, RoutedEventArgs e)
+        {
+            colorCodeText.Text = "#008000";
+        }
+
+        private void yellowBtn_Click(object sender, RoutedEventArgs e)
+        {
+            colorCodeText.Text = "#FFFF00";
+        }
+
+        private void blueBtn_Click(object sender, RoutedEventArgs e)
+        {
+            colorCodeText.Text = "#0000FF";
+        }
     }
 }
